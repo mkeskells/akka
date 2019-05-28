@@ -1,0 +1,370 @@
+{
+    "version" : "1.1.2",
+    "project" : {
+        "name" : "akka-persistence-tck-test",
+        "directory" : "/workspace/akka/akka-persistence-tck",
+        "sources" : [
+            "/workspace/akka/akka-persistence-tck/src/test/scala",
+            "/workspace/akka/akka-persistence-tck/src/test/java",
+            "/workspace/akka/akka-persistence-tck/target/src_managed/test"
+        ],
+        "dependencies" : [
+            "akka-persistence-test",
+            "akka-testkit-test",
+            "akka-persistence-tck"
+        ],
+        "classpath" : [
+            "/workspace/akka/.bloop/akka-persistence-tck/classes",
+            "/workspace/akka/.bloop/akka-persistence/classes",
+            "/workspace/akka/.bloop/akka-actor/classes",
+            "/workspace/akka/.bloop/akka-protobuf/classes",
+            "/workspace/akka/.bloop/akka-persistence/test-classes",
+            "/workspace/akka/.bloop/akka-testkit/classes",
+            "/workspace/akka/.bloop/akka-testkit/test-classes",
+            "/Users/rorygraves/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.8.jar",
+            "/Users/rorygraves/.ivy2/cache/com.typesafe/config/bundles/config-1.3.3.jar",
+            "/Users/rorygraves/.ivy2/cache/org.scala-lang.modules/scala-java8-compat_2.12/bundles/scala-java8-compat_2.12-0.8.0.jar",
+            "/Users/rorygraves/.ivy2/cache/org.scalatest/scalatest_2.12/bundles/scalatest_2.12-3.0.5.jar",
+            "/Users/rorygraves/.ivy2/cache/org.scalactic/scalactic_2.12/bundles/scalactic_2.12-3.0.5.jar",
+            "/Users/rorygraves/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.12.8.jar",
+            "/Users/rorygraves/.ivy2/cache/org.scala-lang.modules/scala-xml_2.12/bundles/scala-xml_2.12-1.0.6.jar",
+            "/Users/rorygraves/.ivy2/cache/junit/junit/jars/junit-4.12.jar",
+            "/Users/rorygraves/.ivy2/cache/org.hamcrest/hamcrest-core/jars/hamcrest-core-1.3.jar",
+            "/Users/rorygraves/.ivy2/cache/io.dropwizard.metrics/metrics-core/bundles/metrics-core-3.2.5.jar",
+            "/Users/rorygraves/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.22.jar",
+            "/Users/rorygraves/.ivy2/cache/io.dropwizard.metrics/metrics-jvm/bundles/metrics-jvm-3.2.5.jar",
+            "/Users/rorygraves/.ivy2/cache/org.latencyutils/LatencyUtils/jars/LatencyUtils-1.0.5.jar",
+            "/Users/rorygraves/.ivy2/cache/org.hdrhistogram/HdrHistogram/bundles/HdrHistogram-2.1.10.jar",
+            "/Users/rorygraves/.ivy2/cache/commons-io/commons-io/jars/commons-io-2.6.jar",
+            "/Users/rorygraves/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.11.jar",
+            "/Users/rorygraves/.ivy2/cache/org.iq80.leveldb/leveldb/jars/leveldb-0.10.jar",
+            "/Users/rorygraves/.ivy2/cache/org.iq80.leveldb/leveldb-api/jars/leveldb-api-0.10.jar",
+            "/Users/rorygraves/.ivy2/cache/com.google.guava/guava/bundles/guava-21.0.jar",
+            "/Users/rorygraves/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-all/bundles/leveldbjni-all-1.8.jar"
+        ],
+        "out" : "/workspace/akka/.bloop/akka-persistence-tck",
+        "classesDir" : "/workspace/akka/.bloop/akka-persistence-tck/test-classes",
+        "resources" : [
+            "/workspace/akka/akka-persistence-tck/src/test/resources",
+            "/workspace/akka/akka-persistence-tck/target/resource_managed/test"
+        ],
+        "scala" : {
+            "organization" : "org.scala-lang",
+            "name" : "scala-compiler",
+            "version" : "2.12.8",
+            "options" : [
+                "-encoding",
+                "UTF-8",
+                "-feature",
+                "-unchecked",
+                "-Xlint",
+                "-Ywarn-unused",
+                "-target:jvm-1.8",
+                "-Ywarn-unused"
+            ],
+            "jars" : [
+                "/Users/rorygraves/.ivy2/cache/org.scala-lang/scala-compiler/jars/scala-compiler-2.12.8.jar",
+                "/Users/rorygraves/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.8.jar",
+                "/Users/rorygraves/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.12.8.jar",
+                "/Users/rorygraves/.ivy2/cache/org.scala-lang.modules/scala-xml_2.12/bundles/scala-xml_2.12-1.0.6.jar",
+                "/Users/rorygraves/.ivy2/cache/jline/jline/jars/jline-2.14.6.jar"
+            ],
+            "setup" : {
+                "order" : "mixed",
+                "addLibraryToBootClasspath" : true,
+                "addCompilerToClasspath" : false,
+                "addExtraJarsToClasspath" : false,
+                "manageBootClasspath" : true,
+                "filterLibraryFromClasspath" : true
+            }
+        },
+        "java" : {
+            "options" : [
+            ]
+        },
+        "test" : {
+            "frameworks" : [
+                {
+                    "names" : [
+                        "org.scalacheck.ScalaCheckFramework"
+                    ]
+                },
+                {
+                    "names" : [
+                        "org.specs2.runner.Specs2Framework",
+                        "org.specs2.runner.SpecsFramework"
+                    ]
+                },
+                {
+                    "names" : [
+                        "org.specs.runner.SpecsFramework"
+                    ]
+                },
+                {
+                    "names" : [
+                        "org.scalatest.tools.Framework",
+                        "org.scalatest.tools.ScalaTestFramework"
+                    ]
+                },
+                {
+                    "names" : [
+                        "com.novocode.junit.JUnitFramework"
+                    ]
+                }
+            ],
+            "options" : {
+                "excludes" : [
+                ],
+                "arguments" : [
+                    {
+                        "args" : [
+                            "-oDF"
+                        ]
+                    }
+                ]
+            }
+        },
+        "platform" : {
+            "name" : "jvm",
+            "config" : {
+                "home" : "/Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre",
+                "options" : [
+                    "-XX:+UseG1GC",
+                    "-Xms3g",
+                    "-Xmx3g",
+                    "-Xss2m",
+                    "-XX:+PerfDisableSharedMem",
+                    "-XX:MaxGCPauseMillis=300",
+                    "-XX:MaxDirectMemorySize=256m",
+                    "-Djava.security.egd=file:/dev/./urandom"
+                ]
+            },
+            "mainClass" : [
+            ]
+        },
+        "resolution" : {
+            "modules" : [
+                {
+                    "organization" : "org.scala-lang",
+                    "name" : "scala-library",
+                    "version" : "2.12.8",
+                    "artifacts" : [
+                        {
+                            "name" : "scala-library",
+                            "path" : "/Users/rorygraves/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.8.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.typesafe",
+                    "name" : "config",
+                    "version" : "1.3.3",
+                    "artifacts" : [
+                        {
+                            "name" : "config",
+                            "path" : "/Users/rorygraves/.ivy2/cache/com.typesafe/config/bundles/config-1.3.3.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.scala-lang.modules",
+                    "name" : "scala-java8-compat_2.12",
+                    "version" : "0.8.0",
+                    "artifacts" : [
+                        {
+                            "name" : "scala-java8-compat_2.12",
+                            "path" : "/Users/rorygraves/.ivy2/cache/org.scala-lang.modules/scala-java8-compat_2.12/bundles/scala-java8-compat_2.12-0.8.0.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.scalatest",
+                    "name" : "scalatest_2.12",
+                    "version" : "3.0.5",
+                    "artifacts" : [
+                        {
+                            "name" : "scalatest_2.12",
+                            "path" : "/Users/rorygraves/.ivy2/cache/org.scalatest/scalatest_2.12/bundles/scalatest_2.12-3.0.5.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.scalactic",
+                    "name" : "scalactic_2.12",
+                    "version" : "3.0.5",
+                    "artifacts" : [
+                        {
+                            "name" : "scalactic_2.12",
+                            "path" : "/Users/rorygraves/.ivy2/cache/org.scalactic/scalactic_2.12/bundles/scalactic_2.12-3.0.5.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.scala-lang",
+                    "name" : "scala-reflect",
+                    "version" : "2.12.8",
+                    "artifacts" : [
+                        {
+                            "name" : "scala-reflect",
+                            "path" : "/Users/rorygraves/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.12.8.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.scala-lang.modules",
+                    "name" : "scala-xml_2.12",
+                    "version" : "1.0.6",
+                    "artifacts" : [
+                        {
+                            "name" : "scala-xml_2.12",
+                            "path" : "/Users/rorygraves/.ivy2/cache/org.scala-lang.modules/scala-xml_2.12/bundles/scala-xml_2.12-1.0.6.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "junit",
+                    "name" : "junit",
+                    "version" : "4.12",
+                    "artifacts" : [
+                        {
+                            "name" : "junit",
+                            "path" : "/Users/rorygraves/.ivy2/cache/junit/junit/jars/junit-4.12.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.hamcrest",
+                    "name" : "hamcrest-core",
+                    "version" : "1.3",
+                    "artifacts" : [
+                        {
+                            "name" : "hamcrest-core",
+                            "path" : "/Users/rorygraves/.ivy2/cache/org.hamcrest/hamcrest-core/jars/hamcrest-core-1.3.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "io.dropwizard.metrics",
+                    "name" : "metrics-core",
+                    "version" : "3.2.5",
+                    "artifacts" : [
+                        {
+                            "name" : "metrics-core",
+                            "path" : "/Users/rorygraves/.ivy2/cache/io.dropwizard.metrics/metrics-core/bundles/metrics-core-3.2.5.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.slf4j",
+                    "name" : "slf4j-api",
+                    "version" : "1.7.22",
+                    "artifacts" : [
+                        {
+                            "name" : "slf4j-api",
+                            "path" : "/Users/rorygraves/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.22.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "io.dropwizard.metrics",
+                    "name" : "metrics-jvm",
+                    "version" : "3.2.5",
+                    "artifacts" : [
+                        {
+                            "name" : "metrics-jvm",
+                            "path" : "/Users/rorygraves/.ivy2/cache/io.dropwizard.metrics/metrics-jvm/bundles/metrics-jvm-3.2.5.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.latencyutils",
+                    "name" : "LatencyUtils",
+                    "version" : "1.0.5",
+                    "artifacts" : [
+                        {
+                            "name" : "LatencyUtils",
+                            "path" : "/Users/rorygraves/.ivy2/cache/org.latencyutils/LatencyUtils/jars/LatencyUtils-1.0.5.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.hdrhistogram",
+                    "name" : "HdrHistogram",
+                    "version" : "2.1.10",
+                    "artifacts" : [
+                        {
+                            "name" : "HdrHistogram",
+                            "path" : "/Users/rorygraves/.ivy2/cache/org.hdrhistogram/HdrHistogram/bundles/HdrHistogram-2.1.10.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "commons-io",
+                    "name" : "commons-io",
+                    "version" : "2.6",
+                    "artifacts" : [
+                        {
+                            "name" : "commons-io",
+                            "path" : "/Users/rorygraves/.ivy2/cache/commons-io/commons-io/jars/commons-io-2.6.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "commons-codec",
+                    "name" : "commons-codec",
+                    "version" : "1.11",
+                    "artifacts" : [
+                        {
+                            "name" : "commons-codec",
+                            "path" : "/Users/rorygraves/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.11.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.iq80.leveldb",
+                    "name" : "leveldb",
+                    "version" : "0.10",
+                    "artifacts" : [
+                        {
+                            "name" : "leveldb",
+                            "path" : "/Users/rorygraves/.ivy2/cache/org.iq80.leveldb/leveldb/jars/leveldb-0.10.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.iq80.leveldb",
+                    "name" : "leveldb-api",
+                    "version" : "0.10",
+                    "artifacts" : [
+                        {
+                            "name" : "leveldb-api",
+                            "path" : "/Users/rorygraves/.ivy2/cache/org.iq80.leveldb/leveldb-api/jars/leveldb-api-0.10.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.google.guava",
+                    "name" : "guava",
+                    "version" : "21.0",
+                    "artifacts" : [
+                        {
+                            "name" : "guava",
+                            "path" : "/Users/rorygraves/.ivy2/cache/com.google.guava/guava/bundles/guava-21.0.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.fusesource.leveldbjni",
+                    "name" : "leveldbjni-all",
+                    "version" : "1.8",
+                    "artifacts" : [
+                        {
+                            "name" : "leveldbjni-all",
+                            "path" : "/Users/rorygraves/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-all/bundles/leveldbjni-all-1.8.jar"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

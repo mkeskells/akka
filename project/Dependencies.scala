@@ -144,6 +144,7 @@ object Dependencies {
 
   import Compile._
   // TODO check if `l ++=` everywhere expensive?
+  libraryDependencies += "ch.epfl.scala" %% "bloop-config" % "1.1.0"
   val l = libraryDependencies
 
   val actor = l ++= Seq(config, java8Compat.value)

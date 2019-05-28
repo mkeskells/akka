@@ -1,0 +1,167 @@
+{
+    "version" : "1.1.2",
+    "project" : {
+        "name" : "akka-scala-nightly-test",
+        "directory" : "/workspace/akka/akka-scala-nightly",
+        "sources" : [
+            "/workspace/akka/akka-scala-nightly/src/test/scala",
+            "/workspace/akka/akka-scala-nightly/src/test/java",
+            "/workspace/akka/akka-scala-nightly/target/src_managed/test"
+        ],
+        "dependencies" : [
+            "akka-scala-nightly",
+            "akka-actor-test",
+            "akka-actor-tests-test",
+            "akka-bench-jmh-test",
+            "akka-camel-test",
+            "akka-cluster-test",
+            "akka-cluster-metrics-test",
+            "akka-cluster-sharding-test",
+            "akka-cluster-tools-test",
+            "akka-contrib-test",
+            "akka-distributed-data-test",
+            "akka-multi-node-testkit-test",
+            "akka-osgi-test",
+            "akka-persistence-test",
+            "akka-persistence-query-test",
+            "akka-persistence-shared-test",
+            "akka-persistence-tck-test",
+            "akka-protobuf-test",
+            "akka-remote-test",
+            "akka-remote-tests-test",
+            "akka-slf4j-test",
+            "akka-stream-test",
+            "akka-stream-testkit-test",
+            "akka-stream-tests-test",
+            "akka-stream-tests-tck-test",
+            "akka-testkit-test",
+            "akka-actor-typed-test",
+            "akka-actor-typed-tests-test",
+            "akka-actor-testkit-typed-test",
+            "akka-persistence-typed-test",
+            "akka-cluster-typed-test",
+            "akka-cluster-sharding-typed-test",
+            "akka-stream-typed-test",
+            "akka-discovery-test"
+        ],
+        "classpath" : [
+            "/workspace/akka/.bloop/akka-scala-nightly/classes",
+            "/Users/rorygraves/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.8.jar"
+        ],
+        "out" : "/workspace/akka/.bloop/akka-scala-nightly",
+        "classesDir" : "/workspace/akka/.bloop/akka-scala-nightly/test-classes",
+        "resources" : [
+            "/workspace/akka/akka-scala-nightly/src/test/resources",
+            "/workspace/akka/akka-scala-nightly/target/resource_managed/test"
+        ],
+        "scala" : {
+            "organization" : "org.scala-lang",
+            "name" : "scala-compiler",
+            "version" : "2.12.8",
+            "options" : [
+                "-encoding",
+                "UTF-8",
+                "-feature",
+                "-unchecked",
+                "-Xlint",
+                "-Ywarn-unused",
+                "-target:jvm-1.8",
+                "-Ywarn-unused"
+            ],
+            "jars" : [
+                "/Users/rorygraves/.ivy2/cache/org.scala-lang/scala-compiler/jars/scala-compiler-2.12.8.jar",
+                "/Users/rorygraves/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.8.jar",
+                "/Users/rorygraves/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.12.8.jar",
+                "/Users/rorygraves/.ivy2/cache/org.scala-lang.modules/scala-xml_2.12/bundles/scala-xml_2.12-1.0.6.jar",
+                "/Users/rorygraves/.ivy2/cache/jline/jline/jars/jline-2.14.6.jar"
+            ],
+            "setup" : {
+                "order" : "mixed",
+                "addLibraryToBootClasspath" : true,
+                "addCompilerToClasspath" : false,
+                "addExtraJarsToClasspath" : false,
+                "manageBootClasspath" : true,
+                "filterLibraryFromClasspath" : true
+            }
+        },
+        "java" : {
+            "options" : [
+            ]
+        },
+        "test" : {
+            "frameworks" : [
+                {
+                    "names" : [
+                        "org.scalacheck.ScalaCheckFramework"
+                    ]
+                },
+                {
+                    "names" : [
+                        "org.specs2.runner.Specs2Framework",
+                        "org.specs2.runner.SpecsFramework"
+                    ]
+                },
+                {
+                    "names" : [
+                        "org.specs.runner.SpecsFramework"
+                    ]
+                },
+                {
+                    "names" : [
+                        "org.scalatest.tools.Framework",
+                        "org.scalatest.tools.ScalaTestFramework"
+                    ]
+                },
+                {
+                    "names" : [
+                        "com.novocode.junit.JUnitFramework"
+                    ]
+                }
+            ],
+            "options" : {
+                "excludes" : [
+                ],
+                "arguments" : [
+                    {
+                        "args" : [
+                            "-oDF"
+                        ]
+                    }
+                ]
+            }
+        },
+        "platform" : {
+            "name" : "jvm",
+            "config" : {
+                "home" : "/Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre",
+                "options" : [
+                    "-XX:+UseG1GC",
+                    "-Xms3g",
+                    "-Xmx3g",
+                    "-Xss2m",
+                    "-XX:+PerfDisableSharedMem",
+                    "-XX:MaxGCPauseMillis=300",
+                    "-XX:MaxDirectMemorySize=256m",
+                    "-Djava.security.egd=file:/dev/./urandom"
+                ]
+            },
+            "mainClass" : [
+            ]
+        },
+        "resolution" : {
+            "modules" : [
+                {
+                    "organization" : "org.scala-lang",
+                    "name" : "scala-library",
+                    "version" : "2.12.8",
+                    "artifacts" : [
+                        {
+                            "name" : "scala-library",
+                            "path" : "/Users/rorygraves/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.8.jar"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

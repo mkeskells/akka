@@ -12,6 +12,10 @@ import spray.boilerplate.BoilerplatePlugin
 import akka.AkkaBuild._
 import akka.{AkkaBuild, Dependencies, GitHub, OSGi, Protobuf, SigarLoader, VersionGenerator}
 import sbt.Keys.{initialCommands, parallelExecution}
+libraryDependencies += "ch.epfl.scala" %% "bloop-config" % "1.1.0"
+
+addCompilerPlugin("org.scalameta" % "semanticdb-scalac" % "4.1.0" cross CrossVersion.full)
+scalacOptions += "-Yrangepos"
 
 initialize := {
   // Load system properties from a file to make configuration from Jenkins easier
@@ -64,7 +68,7 @@ lazy val root = Project(
  )
 
 lazy val actor = akkaModule("akka-actor")
-  .settings(Dependencies.actor)
+  .settings(addCompilerPlugin(scalafixSemanticdb),Dependencies.actor)
   .settings(OSGi.actor)
   .settings(AutomaticModuleName.settings("akka.actor"))
   .settings(

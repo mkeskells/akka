@@ -1,0 +1,294 @@
+{
+    "version" : "1.1.2",
+    "project" : {
+        "name" : "akka-test",
+        "directory" : "/workspace/akka",
+        "sources" : [
+            "/workspace/akka/src/test/scala",
+            "/workspace/akka/src/test/java",
+            "/workspace/akka/target/src_managed/test"
+        ],
+        "dependencies" : [
+            "akka",
+            "akka-actor-test",
+            "akka-actor-tests-test",
+            "akka-agent-test",
+            "akka-bench-jmh-test",
+            "akka-camel-test",
+            "akka-cluster-test",
+            "akka-cluster-metrics-test",
+            "akka-cluster-sharding-test",
+            "akka-cluster-tools-test",
+            "akka-contrib-test",
+            "akka-distributed-data-test",
+            "akka-docs-test",
+            "akka-multi-node-testkit-test",
+            "akka-osgi-test",
+            "akka-persistence-test",
+            "akka-persistence-query-test",
+            "akka-persistence-shared-test",
+            "akka-persistence-tck-test",
+            "akka-protobuf-test",
+            "akka-remote-test",
+            "akka-remote-tests-test",
+            "akka-slf4j-test",
+            "akka-stream-test",
+            "akka-stream-testkit-test",
+            "akka-stream-tests-test",
+            "akka-stream-tests-tck-test",
+            "akka-testkit-test",
+            "akka-actor-typed-test",
+            "akka-actor-typed-tests-test",
+            "akka-actor-testkit-typed-test",
+            "akka-persistence-typed-test",
+            "akka-cluster-typed-test",
+            "akka-cluster-sharding-typed-test",
+            "akka-stream-typed-test",
+            "akka-discovery-test"
+        ],
+        "classpath" : [
+            "/workspace/akka/.bloop/akka/classes",
+            "/Users/rorygraves/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.8.jar",
+            "/Users/rorygraves/.ivy2/cache/ch.epfl.scala/bloop-config_2.12/jars/bloop-config_2.12-1.1.0.jar",
+            "/Users/rorygraves/.ivy2/cache/io.circe/circe-parser_2.12/jars/circe-parser_2.12-0.9.3.jar",
+            "/Users/rorygraves/.ivy2/cache/io.circe/circe-jawn_2.12/jars/circe-jawn_2.12-0.9.3.jar",
+            "/Users/rorygraves/.ivy2/cache/io.circe/circe-core_2.12/jars/circe-core_2.12-0.9.3.jar",
+            "/Users/rorygraves/.ivy2/cache/io.circe/circe-numbers_2.12/jars/circe-numbers_2.12-0.9.3.jar",
+            "/Users/rorygraves/.ivy2/cache/org.typelevel/cats-core_2.12/jars/cats-core_2.12-1.0.1.jar",
+            "/Users/rorygraves/.ivy2/cache/org.typelevel/cats-macros_2.12/jars/cats-macros_2.12-1.0.1.jar",
+            "/Users/rorygraves/.ivy2/cache/org.typelevel/machinist_2.12/jars/machinist_2.12-0.6.2.jar",
+            "/Users/rorygraves/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.12.8.jar",
+            "/Users/rorygraves/.ivy2/cache/org.typelevel/cats-kernel_2.12/jars/cats-kernel_2.12-1.0.1.jar",
+            "/Users/rorygraves/.ivy2/cache/org.spire-math/jawn-parser_2.12/jars/jawn-parser_2.12-0.11.1.jar",
+            "/Users/rorygraves/.ivy2/cache/io.circe/circe-derivation_2.12/jars/circe-derivation_2.12-0.9.0-M3.jar"
+        ],
+        "out" : "/workspace/akka/.bloop/akka",
+        "classesDir" : "/workspace/akka/.bloop/akka/test-classes",
+        "resources" : [
+            "/workspace/akka/src/test/resources",
+            "/workspace/akka/target/resource_managed/test"
+        ],
+        "scala" : {
+            "organization" : "org.scala-lang",
+            "name" : "scala-compiler",
+            "version" : "2.12.8",
+            "options" : [
+                "-Yrangepos",
+                "-Xplugin:/Users/rorygraves/.ivy2/cache/org.scalameta/semanticdb-scalac_2.12.8/jars/semanticdb-scalac_2.12.8-4.1.0.jar"
+            ],
+            "jars" : [
+                "/Users/rorygraves/.ivy2/cache/org.scala-lang/scala-compiler/jars/scala-compiler-2.12.8.jar",
+                "/Users/rorygraves/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.8.jar",
+                "/Users/rorygraves/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.12.8.jar",
+                "/Users/rorygraves/.ivy2/cache/org.scala-lang.modules/scala-xml_2.12/bundles/scala-xml_2.12-1.0.6.jar",
+                "/Users/rorygraves/.ivy2/cache/jline/jline/jars/jline-2.14.6.jar"
+            ],
+            "setup" : {
+                "order" : "mixed",
+                "addLibraryToBootClasspath" : true,
+                "addCompilerToClasspath" : false,
+                "addExtraJarsToClasspath" : false,
+                "manageBootClasspath" : true,
+                "filterLibraryFromClasspath" : true
+            }
+        },
+        "java" : {
+            "options" : [
+            ]
+        },
+        "test" : {
+            "frameworks" : [
+                {
+                    "names" : [
+                        "org.scalacheck.ScalaCheckFramework"
+                    ]
+                },
+                {
+                    "names" : [
+                        "org.specs2.runner.Specs2Framework",
+                        "org.specs2.runner.SpecsFramework"
+                    ]
+                },
+                {
+                    "names" : [
+                        "org.specs.runner.SpecsFramework"
+                    ]
+                },
+                {
+                    "names" : [
+                        "org.scalatest.tools.Framework",
+                        "org.scalatest.tools.ScalaTestFramework"
+                    ]
+                },
+                {
+                    "names" : [
+                        "com.novocode.junit.JUnitFramework"
+                    ]
+                }
+            ],
+            "options" : {
+                "excludes" : [
+                ],
+                "arguments" : [
+                ]
+            }
+        },
+        "platform" : {
+            "name" : "jvm",
+            "config" : {
+                "home" : "/Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre",
+                "options" : [
+                ]
+            },
+            "mainClass" : [
+            ]
+        },
+        "resolution" : {
+            "modules" : [
+                {
+                    "organization" : "org.scala-lang",
+                    "name" : "scala-library",
+                    "version" : "2.12.8",
+                    "artifacts" : [
+                        {
+                            "name" : "scala-library",
+                            "path" : "/Users/rorygraves/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.8.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "ch.epfl.scala",
+                    "name" : "bloop-config_2.12",
+                    "version" : "1.1.0",
+                    "artifacts" : [
+                        {
+                            "name" : "bloop-config_2.12",
+                            "path" : "/Users/rorygraves/.ivy2/cache/ch.epfl.scala/bloop-config_2.12/jars/bloop-config_2.12-1.1.0.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "io.circe",
+                    "name" : "circe-parser_2.12",
+                    "version" : "0.9.3",
+                    "artifacts" : [
+                        {
+                            "name" : "circe-parser_2.12",
+                            "path" : "/Users/rorygraves/.ivy2/cache/io.circe/circe-parser_2.12/jars/circe-parser_2.12-0.9.3.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "io.circe",
+                    "name" : "circe-jawn_2.12",
+                    "version" : "0.9.3",
+                    "artifacts" : [
+                        {
+                            "name" : "circe-jawn_2.12",
+                            "path" : "/Users/rorygraves/.ivy2/cache/io.circe/circe-jawn_2.12/jars/circe-jawn_2.12-0.9.3.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "io.circe",
+                    "name" : "circe-core_2.12",
+                    "version" : "0.9.3",
+                    "artifacts" : [
+                        {
+                            "name" : "circe-core_2.12",
+                            "path" : "/Users/rorygraves/.ivy2/cache/io.circe/circe-core_2.12/jars/circe-core_2.12-0.9.3.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "io.circe",
+                    "name" : "circe-numbers_2.12",
+                    "version" : "0.9.3",
+                    "artifacts" : [
+                        {
+                            "name" : "circe-numbers_2.12",
+                            "path" : "/Users/rorygraves/.ivy2/cache/io.circe/circe-numbers_2.12/jars/circe-numbers_2.12-0.9.3.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.typelevel",
+                    "name" : "cats-core_2.12",
+                    "version" : "1.0.1",
+                    "artifacts" : [
+                        {
+                            "name" : "cats-core_2.12",
+                            "path" : "/Users/rorygraves/.ivy2/cache/org.typelevel/cats-core_2.12/jars/cats-core_2.12-1.0.1.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.typelevel",
+                    "name" : "cats-macros_2.12",
+                    "version" : "1.0.1",
+                    "artifacts" : [
+                        {
+                            "name" : "cats-macros_2.12",
+                            "path" : "/Users/rorygraves/.ivy2/cache/org.typelevel/cats-macros_2.12/jars/cats-macros_2.12-1.0.1.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.typelevel",
+                    "name" : "machinist_2.12",
+                    "version" : "0.6.2",
+                    "artifacts" : [
+                        {
+                            "name" : "machinist_2.12",
+                            "path" : "/Users/rorygraves/.ivy2/cache/org.typelevel/machinist_2.12/jars/machinist_2.12-0.6.2.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.scala-lang",
+                    "name" : "scala-reflect",
+                    "version" : "2.12.8",
+                    "artifacts" : [
+                        {
+                            "name" : "scala-reflect",
+                            "path" : "/Users/rorygraves/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.12.8.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.typelevel",
+                    "name" : "cats-kernel_2.12",
+                    "version" : "1.0.1",
+                    "artifacts" : [
+                        {
+                            "name" : "cats-kernel_2.12",
+                            "path" : "/Users/rorygraves/.ivy2/cache/org.typelevel/cats-kernel_2.12/jars/cats-kernel_2.12-1.0.1.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.spire-math",
+                    "name" : "jawn-parser_2.12",
+                    "version" : "0.11.1",
+                    "artifacts" : [
+                        {
+                            "name" : "jawn-parser_2.12",
+                            "path" : "/Users/rorygraves/.ivy2/cache/org.spire-math/jawn-parser_2.12/jars/jawn-parser_2.12-0.11.1.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "io.circe",
+                    "name" : "circe-derivation_2.12",
+                    "version" : "0.9.0-M3",
+                    "artifacts" : [
+                        {
+                            "name" : "circe-derivation_2.12",
+                            "path" : "/Users/rorygraves/.ivy2/cache/io.circe/circe-derivation_2.12/jars/circe-derivation_2.12-0.9.0-M3.jar"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

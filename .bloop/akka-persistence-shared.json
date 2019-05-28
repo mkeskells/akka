@@ -1,0 +1,172 @@
+{
+    "version" : "1.1.2",
+    "project" : {
+        "name" : "akka-persistence-shared",
+        "directory" : "/workspace/akka/akka-persistence-shared",
+        "sources" : [
+            "/workspace/akka/akka-persistence-shared/src/main/scala",
+            "/workspace/akka/akka-persistence-shared/src/main/java",
+            "/workspace/akka/akka-persistence-shared/target/src_managed/main"
+        ],
+        "dependencies" : [
+            "akka-persistence",
+            "akka-testkit",
+            "akka-remote",
+            "akka-protobuf"
+        ],
+        "classpath" : [
+            "/workspace/akka/.bloop/akka-protobuf/classes",
+            "/Users/rorygraves/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.8.jar",
+            "/Users/rorygraves/.ivy2/cache/org.iq80.leveldb/leveldb/jars/leveldb-0.10.jar",
+            "/Users/rorygraves/.ivy2/cache/org.iq80.leveldb/leveldb-api/jars/leveldb-api-0.10.jar",
+            "/Users/rorygraves/.ivy2/cache/com.google.guava/guava/bundles/guava-21.0.jar",
+            "/Users/rorygraves/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-all/bundles/leveldbjni-all-1.8.jar"
+        ],
+        "out" : "/workspace/akka/.bloop/akka-persistence-shared",
+        "classesDir" : "/workspace/akka/.bloop/akka-persistence-shared/classes",
+        "resources" : [
+            "/workspace/akka/akka-persistence-shared/src/main/resources",
+            "/workspace/akka/akka-persistence-shared/target/resource_managed/main"
+        ],
+        "scala" : {
+            "organization" : "org.scala-lang",
+            "name" : "scala-compiler",
+            "version" : "2.12.8",
+            "options" : [
+                "-encoding",
+                "UTF-8",
+                "-feature",
+                "-unchecked",
+                "-Xlog-reflective-calls",
+                "-Xlint",
+                "-Ywarn-unused",
+                "-target:jvm-1.8"
+            ],
+            "jars" : [
+                "/Users/rorygraves/.ivy2/cache/org.scala-lang/scala-compiler/jars/scala-compiler-2.12.8.jar",
+                "/Users/rorygraves/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.8.jar",
+                "/Users/rorygraves/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.12.8.jar",
+                "/Users/rorygraves/.ivy2/cache/org.scala-lang.modules/scala-xml_2.12/bundles/scala-xml_2.12-1.0.6.jar",
+                "/Users/rorygraves/.ivy2/cache/jline/jline/jars/jline-2.14.6.jar"
+            ],
+            "setup" : {
+                "order" : "mixed",
+                "addLibraryToBootClasspath" : true,
+                "addCompilerToClasspath" : false,
+                "addExtraJarsToClasspath" : false,
+                "manageBootClasspath" : true,
+                "filterLibraryFromClasspath" : true
+            }
+        },
+        "java" : {
+            "options" : [
+            ]
+        },
+        "test" : {
+            "frameworks" : [
+                {
+                    "names" : [
+                        "org.scalacheck.ScalaCheckFramework"
+                    ]
+                },
+                {
+                    "names" : [
+                        "org.specs2.runner.Specs2Framework",
+                        "org.specs2.runner.SpecsFramework"
+                    ]
+                },
+                {
+                    "names" : [
+                        "org.specs.runner.SpecsFramework"
+                    ]
+                },
+                {
+                    "names" : [
+                        "org.scalatest.tools.Framework",
+                        "org.scalatest.tools.ScalaTestFramework"
+                    ]
+                },
+                {
+                    "names" : [
+                        "com.novocode.junit.JUnitFramework"
+                    ]
+                }
+            ],
+            "options" : {
+                "excludes" : [
+                ],
+                "arguments" : [
+                ]
+            }
+        },
+        "platform" : {
+            "name" : "jvm",
+            "config" : {
+                "home" : "/Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre",
+                "options" : [
+                ]
+            },
+            "mainClass" : [
+            ]
+        },
+        "resolution" : {
+            "modules" : [
+                {
+                    "organization" : "org.scala-lang",
+                    "name" : "scala-library",
+                    "version" : "2.12.8",
+                    "artifacts" : [
+                        {
+                            "name" : "scala-library",
+                            "path" : "/Users/rorygraves/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.8.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.iq80.leveldb",
+                    "name" : "leveldb",
+                    "version" : "0.10",
+                    "artifacts" : [
+                        {
+                            "name" : "leveldb",
+                            "path" : "/Users/rorygraves/.ivy2/cache/org.iq80.leveldb/leveldb/jars/leveldb-0.10.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.iq80.leveldb",
+                    "name" : "leveldb-api",
+                    "version" : "0.10",
+                    "artifacts" : [
+                        {
+                            "name" : "leveldb-api",
+                            "path" : "/Users/rorygraves/.ivy2/cache/org.iq80.leveldb/leveldb-api/jars/leveldb-api-0.10.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.google.guava",
+                    "name" : "guava",
+                    "version" : "21.0",
+                    "artifacts" : [
+                        {
+                            "name" : "guava",
+                            "path" : "/Users/rorygraves/.ivy2/cache/com.google.guava/guava/bundles/guava-21.0.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.fusesource.leveldbjni",
+                    "name" : "leveldbjni-all",
+                    "version" : "1.8",
+                    "artifacts" : [
+                        {
+                            "name" : "leveldbjni-all",
+                            "path" : "/Users/rorygraves/.ivy2/cache/org.fusesource.leveldbjni/leveldbjni-all/bundles/leveldbjni-all-1.8.jar"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

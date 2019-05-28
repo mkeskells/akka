@@ -1,0 +1,152 @@
+{
+    "version" : "1.1.2",
+    "project" : {
+        "name" : "akka-scala-nightly",
+        "directory" : "/workspace/akka/akka-scala-nightly",
+        "sources" : [
+            "/workspace/akka/akka-scala-nightly/src/main/scala",
+            "/workspace/akka/akka-scala-nightly/src/main/java",
+            "/workspace/akka/akka-scala-nightly/target/src_managed/main"
+        ],
+        "dependencies" : [
+            "akka-actor",
+            "akka-actor-tests",
+            "akka-bench-jmh",
+            "akka-camel",
+            "akka-cluster",
+            "akka-cluster-metrics",
+            "akka-cluster-sharding",
+            "akka-cluster-tools",
+            "akka-contrib",
+            "akka-distributed-data",
+            "akka-multi-node-testkit",
+            "akka-osgi",
+            "akka-persistence",
+            "akka-persistence-query",
+            "akka-persistence-shared",
+            "akka-persistence-tck",
+            "akka-protobuf",
+            "akka-remote",
+            "akka-remote-tests",
+            "akka-slf4j",
+            "akka-stream",
+            "akka-stream-testkit",
+            "akka-stream-tests",
+            "akka-stream-tests-tck",
+            "akka-testkit",
+            "akka-actor-typed",
+            "akka-actor-typed-tests",
+            "akka-actor-testkit-typed",
+            "akka-persistence-typed",
+            "akka-cluster-typed",
+            "akka-cluster-sharding-typed",
+            "akka-stream-typed",
+            "akka-discovery"
+        ],
+        "classpath" : [
+            "/Users/rorygraves/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.8.jar"
+        ],
+        "out" : "/workspace/akka/.bloop/akka-scala-nightly",
+        "classesDir" : "/workspace/akka/.bloop/akka-scala-nightly/classes",
+        "resources" : [
+            "/workspace/akka/akka-scala-nightly/src/main/resources",
+            "/workspace/akka/akka-scala-nightly/target/resource_managed/main"
+        ],
+        "scala" : {
+            "organization" : "org.scala-lang",
+            "name" : "scala-compiler",
+            "version" : "2.12.8",
+            "options" : [
+                "-encoding",
+                "UTF-8",
+                "-feature",
+                "-unchecked",
+                "-Xlog-reflective-calls",
+                "-Xlint",
+                "-Ywarn-unused",
+                "-target:jvm-1.8"
+            ],
+            "jars" : [
+                "/Users/rorygraves/.ivy2/cache/org.scala-lang/scala-compiler/jars/scala-compiler-2.12.8.jar",
+                "/Users/rorygraves/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.8.jar",
+                "/Users/rorygraves/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.12.8.jar",
+                "/Users/rorygraves/.ivy2/cache/org.scala-lang.modules/scala-xml_2.12/bundles/scala-xml_2.12-1.0.6.jar",
+                "/Users/rorygraves/.ivy2/cache/jline/jline/jars/jline-2.14.6.jar"
+            ],
+            "setup" : {
+                "order" : "mixed",
+                "addLibraryToBootClasspath" : true,
+                "addCompilerToClasspath" : false,
+                "addExtraJarsToClasspath" : false,
+                "manageBootClasspath" : true,
+                "filterLibraryFromClasspath" : true
+            }
+        },
+        "java" : {
+            "options" : [
+            ]
+        },
+        "test" : {
+            "frameworks" : [
+                {
+                    "names" : [
+                        "org.scalacheck.ScalaCheckFramework"
+                    ]
+                },
+                {
+                    "names" : [
+                        "org.specs2.runner.Specs2Framework",
+                        "org.specs2.runner.SpecsFramework"
+                    ]
+                },
+                {
+                    "names" : [
+                        "org.specs.runner.SpecsFramework"
+                    ]
+                },
+                {
+                    "names" : [
+                        "org.scalatest.tools.Framework",
+                        "org.scalatest.tools.ScalaTestFramework"
+                    ]
+                },
+                {
+                    "names" : [
+                        "com.novocode.junit.JUnitFramework"
+                    ]
+                }
+            ],
+            "options" : {
+                "excludes" : [
+                ],
+                "arguments" : [
+                ]
+            }
+        },
+        "platform" : {
+            "name" : "jvm",
+            "config" : {
+                "home" : "/Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre",
+                "options" : [
+                ]
+            },
+            "mainClass" : [
+            ]
+        },
+        "resolution" : {
+            "modules" : [
+                {
+                    "organization" : "org.scala-lang",
+                    "name" : "scala-library",
+                    "version" : "2.12.8",
+                    "artifacts" : [
+                        {
+                            "name" : "scala-library",
+                            "path" : "/Users/rorygraves/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.8.jar"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

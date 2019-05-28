@@ -1,0 +1,134 @@
+{
+    "version" : "1.1.2",
+    "project" : {
+        "name" : "akka-protobuf-test",
+        "directory" : "/workspace/akka/akka-protobuf",
+        "sources" : [
+            "/workspace/akka/akka-protobuf/src/test/scala",
+            "/workspace/akka/akka-protobuf/src/test/java",
+            "/workspace/akka/akka-protobuf/target/src_managed/test"
+        ],
+        "dependencies" : [
+            "akka-protobuf"
+        ],
+        "classpath" : [
+            "/workspace/akka/.bloop/akka-protobuf/classes",
+            "/Users/rorygraves/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.8.jar"
+        ],
+        "out" : "/workspace/akka/.bloop/akka-protobuf",
+        "classesDir" : "/workspace/akka/.bloop/akka-protobuf/test-classes",
+        "resources" : [
+            "/workspace/akka/akka-protobuf/src/test/resources",
+            "/workspace/akka/akka-protobuf/target/resource_managed/test"
+        ],
+        "scala" : {
+            "organization" : "org.scala-lang",
+            "name" : "scala-compiler",
+            "version" : "2.12.8",
+            "options" : [
+                "-encoding",
+                "UTF-8",
+                "-feature",
+                "-unchecked",
+                "-Xlint",
+                "-Ywarn-unused",
+                "-target:jvm-1.8",
+                "-Ywarn-unused"
+            ],
+            "jars" : [
+                "/Users/rorygraves/.ivy2/cache/org.scala-lang/scala-compiler/jars/scala-compiler-2.12.8.jar",
+                "/Users/rorygraves/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.8.jar",
+                "/Users/rorygraves/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.12.8.jar",
+                "/Users/rorygraves/.ivy2/cache/org.scala-lang.modules/scala-xml_2.12/bundles/scala-xml_2.12-1.0.6.jar",
+                "/Users/rorygraves/.ivy2/cache/jline/jline/jars/jline-2.14.6.jar"
+            ],
+            "setup" : {
+                "order" : "mixed",
+                "addLibraryToBootClasspath" : true,
+                "addCompilerToClasspath" : false,
+                "addExtraJarsToClasspath" : false,
+                "manageBootClasspath" : true,
+                "filterLibraryFromClasspath" : true
+            }
+        },
+        "java" : {
+            "options" : [
+            ]
+        },
+        "test" : {
+            "frameworks" : [
+                {
+                    "names" : [
+                        "org.scalacheck.ScalaCheckFramework"
+                    ]
+                },
+                {
+                    "names" : [
+                        "org.specs2.runner.Specs2Framework",
+                        "org.specs2.runner.SpecsFramework"
+                    ]
+                },
+                {
+                    "names" : [
+                        "org.specs.runner.SpecsFramework"
+                    ]
+                },
+                {
+                    "names" : [
+                        "org.scalatest.tools.Framework",
+                        "org.scalatest.tools.ScalaTestFramework"
+                    ]
+                },
+                {
+                    "names" : [
+                        "com.novocode.junit.JUnitFramework"
+                    ]
+                }
+            ],
+            "options" : {
+                "excludes" : [
+                ],
+                "arguments" : [
+                    {
+                        "args" : [
+                            "-oDF"
+                        ]
+                    }
+                ]
+            }
+        },
+        "platform" : {
+            "name" : "jvm",
+            "config" : {
+                "home" : "/Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre",
+                "options" : [
+                    "-XX:+UseG1GC",
+                    "-Xms3g",
+                    "-Xmx3g",
+                    "-Xss2m",
+                    "-XX:+PerfDisableSharedMem",
+                    "-XX:MaxGCPauseMillis=300",
+                    "-XX:MaxDirectMemorySize=256m",
+                    "-Djava.security.egd=file:/dev/./urandom"
+                ]
+            },
+            "mainClass" : [
+            ]
+        },
+        "resolution" : {
+            "modules" : [
+                {
+                    "organization" : "org.scala-lang",
+                    "name" : "scala-library",
+                    "version" : "2.12.8",
+                    "artifacts" : [
+                        {
+                            "name" : "scala-library",
+                            "path" : "/Users/rorygraves/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.8.jar"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
